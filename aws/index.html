@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLOUDS Association Membership - SCEM</title>
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --secondary-color: #0dcaf0;
+      --dark-bg: #212529;
+      --light-bg: #f8f9fa;
+      --text-dark: #333333;
+      --card-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .main-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .main-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Info Section Styling */
+    .info-section {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: var(--card-shadow);
+      border-top: 8px solid var(--primary-color);
+    }
+
+    .college-title {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #555;
+      margin: 0;
+    }
+
+    .association-title {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin: 10px 0 20px 0;
+      font-weight: 800;
+    }
+
+    .pill {
+      background: var(--secondary-color);
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .vismis-box {
+      margin-top: 25px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      border-left: 4px solid var(--secondary-color);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .vismis-box h3 {
+      margin-top: 0;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .vismis-box ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .vismis-box li {
+      margin-bottom: 8px;
+    }
+
+    .vismis-box li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Form Section Styling */
+    .form-section {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: var(--card-shadow);
+      position: sticky;
+      top: 40px;
+    }
+
+    .form-section h3 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: var(--dark-bg);
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #dde2e5;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-submit:hover {
+      background: #0b5ed7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    
+    <!-- Left Column: Information -->
+    <div class="info-section">
+      <p class="college-title">Sahyadri College of Engineering & Management, Mangaluru</p>
+      <h1 class="association-title">CLOUDS Association</h1>
+      <span class="pill">Department of Computer Science & Engineering</span>
+      
+      <p>Welcome to the official registration portal for the CLOUDS (Computer Leaders Officers and United Computer Science Students) Association. Join our community to foster technical excellence, innovation, and leadership skills.</p>
+      
+      <!-- Institutional Vision -->
+      <div class="vismis-box">
+        <h3>👁️ Our Vision</h3>
+        <p style="margin-bottom:0;">To be a premier institution in Technology and Management by fostering excellence in education, innovation, incubation and values to inspire and empower the young minds.</p>
+      </div>
+
+      <!-- Institutional Mission -->
+      <div class="vismis-box" style="border-left-color: var(--primary-color);">
+        <h3>📖 Our Mission</h3>
+        <ul>
+          <li>Creating an academic ambience to impart holistic education focusing on individual growth, integrity, ethical values and social responsibility.</li>
+          <li>Develop skill based learning through industry-institution interaction to enhance competency and promote entrepreneurship.</li>
+          <li>Fostering innovation and creativity through competitive environment with state-of-the-art infrastructure.</li>
+        </ul>
+      </div>
+
+      <!-- Program Educational Objectives -->
+      <div class="vismis-box">
+        <h3>🎯 Program Educational Objectives (PEOs)</h3>
+        <ul>
+          <li>Acquire teamwork, critical thinking, problem-solving skills and achieve leadership position in business organizations.</li>
+          <li>Engage in lifelong learning for personal and professional growth.</li>
+          <li>Be an entrepreneur by identifying the opportunities to develop sustainable business.</li>
+        </ul>
+      </div>
+
+      <!-- Program Outcomes -->
+      <div class="vismis-box" style="border-left-color: var(--primary-color);">
+        <h3>📊 Program Outcomes (POs)</h3>
+        <ul>
+          <li>Apply Knowledge of management theories and practices to solve business problems.</li>
+          <li>Foster analytical and critical thinking abilities for data-based decision making.</li>
+          <li>Ability to develop value-based leadership ability.</li>
+          <li>Ability to understand, analyse and communicate global, economic, legal and ethical aspects of business.</li>
+          <li>Ability to lead themselves and others in the achievement of organisation goals, contributing effectively to a team environment.</li>
+          <li>Ability to process and analyse the data using modern tools.</li>
+          <li>Apply the concepts of effective communication and engage in lifelong learning.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right Column: Registration Form -->
+    <div class="form-section">
+      <h3>Membership Portal</h3>
+      <form id="joinForm" onsubmit="handleRegistration(event)">
+        
+        <div class="form-group">
+          <label for="studentName">Full Name</label>
+          <input type="text" id="studentName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="usn">USN (University Seat Number)</label>
+          <input type="text" id="usn" placeholder="e.g., 4SF22CS001" pattern="^[4][S][F][0-9]{2}[A-Z]{2}[0-9]{3}$" title="Please enter a valid Sahyadri USN format starting with 4SF (e.g., 4SF22CS001)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="branch">Engineering / Management Branch</label>
+          <select id="branch" required>
+            <option value="" disabled selected>Select your branch</option>
+            <option value="CSE">Computer Science & Engineering</option>
+            <option value="ISE">Information Science & Engineering</option>
+            <option value="AIML">Artificial Intelligence & Machine Learning</option>
+            <option value="DS">Data Science</option>
+            <option value="MBA">Master of Business Administration (MBA)</option>
+            <option value="ECE">Electronics & Communication Engineering</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="semester">Current Semester</label>
+          <select id="semester" required>
+            <option value="" disabled selected>Select semester</option>
+            <option value="1">1st Semester</option>
+            <option value="3">3rd Semester</option>
+            <option value="5">5th Semester</option>
+            <option value="7">7th Semester</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email">College Email ID</label>
+          <input type="email" id="email" placeholder="username.cs22@sahyadri.edu.in" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Register for CLOUDS</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script>
+    function handleRegistration(event) {
+      event.preventDefault();
+      const name = document.getElementById('studentName').value;
+      const usn = document.getElementById('usn').value.toUpperCase();
+      
+      alert(`Thank you, ${name} (${usn})! Your application to join the CLOUDS Association has been submitted successfully.`);
+      document.getElementById('joinForm').reset();
+    }
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+List<String> operationalTarget = new List<String>{
+    'cnaik1849@gmail.com'
+};
+
+String targetSubject = 'Apex Mailing Service';
+String targetBody = 'Hello Chaithra! This message is sent using Salesforce Apex.';
+
+// This explicitly calls the saved class and its sendMail method
+MailingService.sendMail(
+    operationalTarget,
+    targetSubject,
+    targetBody
+);

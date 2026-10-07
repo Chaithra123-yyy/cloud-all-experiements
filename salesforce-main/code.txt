@@ -1,0 +1,44 @@
+public class MailingService {
+
+    public static void sendMail(
+        List<String> toAddresses,
+        String subject,
+        String plainTextBody
+    ) {
+        Messaging.SingleEmailMessage mail =
+            new Messaging.SingleEmailMessage();
+
+        mail.setToAddresses(toAddresses);
+        mail.setSubject(subject);
+        mail.setPlainTextBody(plainTextBody);
+        mail.setSenderDisplayName('Salesforce Core Mailing System');
+
+        List<Messaging.SingleEmailMessage> emailList =
+            new List<Messaging.SingleEmailMessage>{mail};
+
+        try {
+            List<Messaging.SendEmailResult> results =
+                Messaging.sendEmail(emailList);
+
+            for (Messaging.SendEmailResult trackingResult : results) {
+
+                if (trackingResult.isSuccess()) {
+                    System.debug(
+                        'Mailing System Status: Email successfully transmitted.'
+                    );
+                } else {
+                    System.debug(
+                        'Mailing System Error: ' +
+                        trackingResult.getErrors()[0].getMessage()
+                    );
+                }
+            }
+
+        } catch (Exception systemEx) {
+            System.debug(
+                'Critical System Exception Encountered: ' +
+                systemEx.getMessage()
+            );
+        }
+    }
+}
