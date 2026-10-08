@@ -1,0 +1,64 @@
+# 3. Create an EC2 Instance in AWS
+
+## Aim
+
+To create and launch an **EC2 (Elastic Compute Cloud) instance** in Amazon Web Services (AWS) and connect to it using SSH.
+
+## Requirements
+
+* AWS account
+* Internet connection
+* Web browser
+* SSH client (PowerShell, Command Prompt, or Terminal)
+* EC2 key pair (`.pem` file)
+
+## Procedure
+
+### 1. Open EC2
+
+1. Log in to your **AWS Management Console**.
+2. Open **Services** and select **EC2**.
+3. Click **Launch instance**.
+
+### 2. Configure the Instance
+
+1. Enter a suitable **Name** for the instance.
+2. Select an appropriate **AMI (Amazon Machine Image)**.
+3. Select an instance type such as **t2.micro** if it is available under your eligible free-tier offering.
+4. Configure the network and storage settings.
+5. Review the configuration before launching.
+
+> **Note:** AWS free-tier eligibility and pricing can change. Check the current pricing/free-tier information before launching resources to avoid unexpected charges.
+
+### 3. Create or Select a Key Pair
+
+1. Select an existing key pair or create a new key pair.
+2. Download the `.pem` file.
+3. Store the key securely. Do not share it publicly or upload it to GitHub.
+
+### 4. Launch the Instance
+
+1. Click **Launch instance**.
+2. Wait for the instance to start.
+3. Select the running instance from the EC2 instance list.
+
+### 5. Connect Using SSH
+
+1. Click **Connect** at the top of the EC2 instance page.
+2. Select the **SSH client** option.
+3. Copy the SSH command provided by AWS.
+4. Open PowerShell or Terminal.
+5. Navigate to the folder containing your `.pem` file.
+6. Run the SSH command.
+
+Example:
+
+```bash
+ssh -i "VIVKY.pem" ec2-user@<EC2-PUBLIC-DNS>
+```
+
+The username depends on the AMI. For example, Amazon Linux commonly uses `ec2-user`, while Ubuntu commonly uses `ubuntu`.
+
+## Result
+
+An EC2 instance was successfully launched in AWS and connected remotely using SSH and the downloaded key pair.
